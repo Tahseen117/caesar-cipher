@@ -1,5 +1,4 @@
 import os
-import random
 import time
 
 def encoder (string, shift):
