@@ -42,18 +42,10 @@ def decoder (string, shift):
 if __name__ == "__main__":
 
     os.system('cls')
-    welcome_message = "WELCOME TO CEASER CIPHER"
+    welcome_message = "WELCOME TO CEASER CIPHER !!"
     for letter in welcome_message:
-        print (letter, end = "", flush=True)
+        print (letter, end="", flush=True)
         time.sleep(0.1)
-    print('\n')
-
-    binary =['1', '0']
-    for loop in range (500):
-        for j in range (100):
-            print (random.choice(binary), end='', flush=True)
-        time.sleep(0.0001)
-    
     print('\n')
 
     encode_decode = input ("Enter the operation to be performed (encode/decode)\n")
