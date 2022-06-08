@@ -56,13 +56,19 @@ if __name__ == "__main__":
         time.sleep(0.1)
     print('\n')
 
-    encode_decode = input ("Enter the operation to be performed (encode/decode)\n")
-    input_message = input("Enter the message to be encoded/decode :")
-    shift = int(input("Enter the shift :"))
-    shift = shift % 26
+    while True:
 
-    if encode_decode.lower() == 'encode':
-        encoder(string=input_message, shift=shift)
-    
-    elif encode_decode.lower() == 'decode':
-        decoder(input_message, shift)
+        encode_decode = input ("Enter the operation to be performed (encode/decode)\n")
+        input_message = input("Enter the message to be encoded/decode :")
+        shift = int(input("Enter the shift :"))
+        shift = shift % 26
+
+        if encode_decode.lower() == 'encode':
+            encoder(string=input_message, shift=shift)
+        
+        elif encode_decode.lower() == 'decode':
+            decoder(input_message, shift)
+        
+        choice = input ("Do you want to continue (y/n):")
+        if choice.lower() != 'y':
+            break
