@@ -71,4 +71,5 @@ if __name__ == "__main__":
         
         choice = input ("Do you want to continue (y/n):")
         if choice.lower() != 'y':
+            print("Good bye!")
             break
